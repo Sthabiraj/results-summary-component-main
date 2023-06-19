@@ -28,7 +28,6 @@ html {
 .container {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
 }
 .container .result {
   background: linear-gradient(
@@ -81,4 +80,83 @@ html {
 }
 .container .summary {
   background-color: var(--white);
+  padding: 1.4rem;
+}
+.summary h1 {
+  font-size: 0.85rem;
+  color: var(--dark-gray-blue);
+}
+.summary .summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 0.9rem;
+  margin-bottom: 1rem;
+}
+.summary-container .summary-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+.summary-box .summary-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.summary-info h1 {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.red {
+  background-color: hsla(0, 100%, 67%, 0.08);
+}
+.red .summary-info h1 {
+  color: var(--light-red);
+}
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.08);
+}
+.yellow .summary-info h1 {
+  color: var(--orangey-yellow);
+}
+.green {
+  background-color: hsla(166, 100%, 37%, 0.08);
+}
+.green .summary-info h1 {
+  color: var(--green-teal);
+}
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.08);
+}
+.blue .summary-info h1 {
+  color: var(--cobalt-blue);
+}
+.summary-info img {
+  height: 0.9rem;
+}
+.summary-score h1 {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+.summary-score h1 span {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+.summary button {
+  width: 100%;
+  border: none;
+  background: var(--dark-gray-blue);
+  color: var(--white);
+  padding: 0.8rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+button:hover {
+  background: linear-gradient(
+    var(--light-slate-blue) -30%,
+    var(--light-royal-blue) 100%
+  );
 }
