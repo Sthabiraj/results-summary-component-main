@@ -28,6 +28,9 @@ html {
 .container {
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .container .result {
   background: linear-gradient(
@@ -81,6 +84,10 @@ html {
 .container .summary {
   background-color: var(--white);
   padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-evenly;
 }
 .summary h1 {
   font-size: 0.85rem;
@@ -159,4 +166,57 @@ button:hover {
     var(--light-slate-blue) -30%,
     var(--light-royal-blue) 100%
   );
+}
+
+@media (min-width: 600px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    flex-direction: row;
+    width: 730px;
+    height: 510px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 25px;
+  }
+  .container .result {
+    height: auto;
+    width: 50%;
+    border-radius: 25px;
+    padding: 2.2rem;
+  }
+  .container .summary {
+    border-radius: 25px;
+    padding: 2.2rem;
+  }
+  .result h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+  .result .circle {
+    width: 11rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .circle h1 {
+    font-size: 4rem !important;
+    line-height: 4.5rem;
+  }
+  .circle p {
+    font-size: 1rem;
+  }
+  .result h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .result p {
+    font-size: 1.1rem;
+  }
 }
