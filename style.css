@@ -189,10 +189,7 @@ button:hover {
     border-radius: 25px;
     padding: 2.2rem;
   }
-  .container .summary {
-    border-radius: 25px;
-    padding: 2.2rem;
-  }
+
   .result h2 {
     font-size: 1.5rem;
     margin-bottom: 2.2rem;
@@ -218,5 +215,33 @@ button:hover {
   }
   .result p {
     font-size: 1.1rem;
+  }
+  .container .summary {
+    border-radius: 25px;
+    padding: 2.2rem;
+  }
+  .summary h1 {
+    font-size: 1.4rem;
+  }
+  .summary .summary-container {
+    gap: 1rem;
+  }
+  .summary-container .summary-box {
+    padding: 0.8rem;
+  }
+  .summary-info h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .summary-score h1 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .summary-info img {
+    height: 1rem;
+  }
+  .summary button {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
